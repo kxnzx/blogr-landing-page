@@ -36,4 +36,32 @@ $tablet: 768px;
 $xl_tablet: 960px;
 $desktop: 1024px;
 // RESET
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 62.5% of 16px browser font size is 10px */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
 // STYLES
