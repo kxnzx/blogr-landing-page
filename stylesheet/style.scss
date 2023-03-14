@@ -65,3 +65,40 @@ ol {
   list-style: none;
 }
 // STYLES
+body {
+  font-family: $ff_Overpass;
+  font-size: $fs_bodyCopy;
+  background-color: $white;
+  display: grid;
+  //place-items: center;
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(1, 1fr);
+    //grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+header {
+  @media screen and (min-width: $desktop) {
+    // This item will start on row 1 and column 1,and span 2 rows and 1 column:
+    //grid-area: 1 / 1 / span 3 / span 1;
+  }
+}
+
+article {
+  @media screen and (min-width: $desktop) {
+    //display: grid;
+    //grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.grid-item {
+  border: solid darkblue 2px;
+  @media screen and (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .editor {
+      // This item will start on row 1 and column 2,and span 1 rows and 1 column:
+      grid-area: 1 / 2 / span 1 / span 1;
+    }
+  }
+}

@@ -26,4 +26,29 @@ img {
 ul,
 ol {
   list-style: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.6rem;
+  background-color: hsl(0deg, 0%, 100%);
+  display: grid;
+}
+@media screen and (min-width: 1024px) {
+  body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid-item {
+  border: solid darkblue 2px;
+}
+@media screen and (min-width: 1024px) {
+  .grid-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item .editor {
+    grid-area: 1/2/span 1/span 1;
+  }
 }/*# sourceMappingURL=style.css.map */
