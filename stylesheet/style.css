@@ -28,6 +28,10 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   font-size: 1.6rem;
@@ -40,9 +44,68 @@ body {
   }
 }
 
-.grid-item {
-  border: solid darkblue 2px;
+header {
+  background-color: hsl(13deg, 100%, 72%);
+  background-image: url(../images/bg-pattern-intro-mobile.svg), linear-gradient(to bottom right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+  background-repeat: no-repeat;
+  background-position: 35% 33%;
+  border-bottom-left-radius: 100px;
+  padding-top: 5.5rem;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  color: hsl(0deg, 0%, 100%);
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+}
+nav .logo {
+  width: 8rem;
+}
+nav .menuList {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.6rem;
+  padding-bottom: 2rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  padding-bottom: 5rem;
+}
+
+.navigation_links {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 15rem;
+  cursor: pointer;
+}
+.navigation_links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 4.5rem;
+  border-radius: 25px;
+  border: solid white 1px;
+}
+.navigation_links li a {
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+.navigation_links .start {
+  background-color: white;
+}
+.navigation_links .start a {
+  color: hsl(353deg, 100%, 62%);
+}
+
 @media screen and (min-width: 1024px) {
   .grid-item {
     display: grid;
