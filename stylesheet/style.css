@@ -50,21 +50,92 @@ header {
   background-repeat: no-repeat;
   background-position: 35% 33%;
   border-bottom-left-radius: 100px;
-  padding-top: 5.5rem;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   color: hsl(0deg, 0%, 100%);
 }
+@media screen and (min-width: 1024px) {
+  header {
+    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to bottom right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+    background-position: 29% 49%;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 5.5rem;
   padding-bottom: 10rem;
 }
 nav .logo {
   width: 8rem;
 }
+nav .toggleButton {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav .closeIcon {
+  display: none; /* Toggle this on and off in JS */
+}
 nav .menuList {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+  color: hsl(207deg, 13%, 34%);
+  font-weight: 700;
+  position: fixed;
+  width: 32.7rem;
+  top: 12rem;
+  right: 2.4rem;
+  padding: 3.5rem 10rem;
+  z-index: 99;
+}
+nav .menuList ul {
+  text-align: center;
+}
+
+.menuListItems li {
+  margin-bottom: 3.5rem;
+}
+
+.menuListItemsLinks li:first-child {
+  margin-bottom: 2.2rem;
+}
+.menuListItemsLinks li:first-child a {
+  color: hsl(207deg, 13%, 34%);
+}
+.menuListItemsLinks li:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13rem;
+  height: 4.5rem;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+}
+.menuListItemsLinks li:nth-child(2) a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+details > summary::-webkit-details-marker {
   display: none;
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::after {
+  content: url(../images/icon-arrow-dark.svg);
+  transition: 0.2s ease-in;
+}
+
+details[open] summary::after {
+  content: url(../images/icon-arrow-light.svg);
+  transition: 0.2s ease-in;
 }
 
 h1 {

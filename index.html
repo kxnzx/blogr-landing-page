@@ -23,7 +23,7 @@
         /></a>
         <!-- Menu Items -->
         <div class="menuList">
-          <ul>
+          <ul class="menuListItems">
             <li>
               <!-- Disclosure widget submenu's -->
               <details>
@@ -67,17 +67,25 @@
             </li>
           </ul>
           <!-- "Login & Sign Up are navigations to another page or an external source, therefor they are links  -->
-          <ul>
+          <ul class="menuListItemsLinks">
             <li><a href="#">Login</a></li>
             <li><a href="#">Sign Up</a></li>
           </ul>
         </div>
         <!-- Hamburger Menu Button for Mobile Phone viewports -->
-        <button aria-label="mobile_menu">
+        <button aria-label="mobile_menu" class="toggleButton">
           <!-- Hamburger Icon -->
-          <img src="./images/icon-hamburger.svg" alt="Open Menu" />
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="Open Menu"
+            class="openIcon"
+          />
           <!-- Close Icon -->
-          <img src="./images/icon-close.svg" alt="Close Menu" />
+          <img
+            src="./images/icon-close.svg"
+            alt="Close Menu"
+            class="closeIcon"
+          />
         </button>
       </nav>
       <h1>A modern publishing platform</h1>

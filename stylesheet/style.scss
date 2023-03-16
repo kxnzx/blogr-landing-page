@@ -88,27 +88,105 @@ header {
   background-repeat: no-repeat;
   background-position: 35% 33%;
   border-bottom-left-radius: 100px;
-  padding-top: 5.5rem;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   color: $white;
   @media screen and (min-width: $desktop) {
     // This item will start on row 1 and column 1,and span 2 rows and 1 column:
     //grid-area: 1 / 1 / span 3 / span 1;
+    background-image: url(../images/bg-pattern-intro-desktop.svg),
+      linear-gradient(to bottom right, $very_light_red, $light_red);
+    background-position: 29% 49%;
   }
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 5.5rem;
   padding-bottom: 10rem;
   .logo {
     width: 8rem;
   }
 
-  .menuList {
-    display: none;
+  .toggleButton {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .closeIcon {
+    display: none; /* Toggle this on and off in JS */
+  }
+
+  .menuList {
+    //display: none; /* Toggle this on and off in JS */
+    background-color: $white;
+    border-radius: 5px;
+    color: $very_dark_grayish_blue;
+    font-weight: $fw_bold;
+    position: fixed;
+    width: 32.7rem;
+    top: 12rem;
+    right: 2.4rem;
+    padding: 3.5rem 10rem;
+    z-index: 99;
+    ul {
+      text-align: center;
+    }
+  }
+}
+
+.menuListItems {
+  li {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.menuListItemsLinks {
+  li {
+    &:first-child {
+      margin-bottom: 2.2rem;
+      a {
+        color: $very_dark_grayish_blue;
+      }
+    }
+    &:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 13rem;
+      height: 4.5rem;
+      border-radius: 25px;
+      background-image: linear-gradient(to right, $very_light_red, $light_red);
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Customize the default arrow with Webkit Pseudo-element:
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+  &::after {
+    content: url(../images/icon-arrow-dark.svg);
+    transition: 0.2s ease-in;
+  }
+}
+
+// Rotate arrow image after the summary when details are open:
+details[open] summary::after {
+  content: url(../images/icon-arrow-light.svg);
+  transition: 0.2s ease-in;
 }
 
 h1 {
