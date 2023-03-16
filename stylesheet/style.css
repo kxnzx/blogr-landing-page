@@ -85,12 +85,13 @@ nav .menuList {
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
   color: hsl(207deg, 13%, 34%);
-  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
   position: fixed;
   width: 32.7rem;
   top: 12rem;
   right: 2.4rem;
-  padding: 3.5rem 10rem;
+  padding: 3.5rem 2.5rem;
   z-index: 99;
 }
 nav .menuList ul {
@@ -108,6 +109,7 @@ nav .menuList ul {
   color: hsl(207deg, 13%, 34%);
 }
 .menuListItemsLinks li:nth-child(2) {
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,13 +131,21 @@ details > summary {
   cursor: pointer;
 }
 details > summary::after {
-  content: url(../images/icon-arrow-dark.svg);
+  content: "+ ";
   transition: 0.2s ease-in;
 }
 
-details[open] summary::after {
-  content: url(../images/icon-arrow-light.svg);
+details[open] > summary::after {
+  content: "- ";
   transition: 0.2s ease-in;
+}
+
+details ul {
+  background-color: #efeff0;
+  border-radius: 5px;
+}
+details ul a {
+  color: hsl(207deg, 13%, 34%);
 }
 
 h1 {

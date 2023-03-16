@@ -9,6 +9,7 @@ $very_dark_blue: hsl(208, 49%, 24%); // (headings)
 // neutral colors
 $white: hsl(0, 0%, 100%); // (text)
 $grayish_blue: hsl(240, 2%, 79%); // (footer text)
+$light_grayish_blue: lighten($grayish_blue, 15%);
 $very_dark_grayish_blue: hsl(207, 13%, 34%); // (body copy)
 $very_dark_black_blue: hsl(240, 10%, 16%); // (footer background)
 // GRADIENTS
@@ -127,12 +128,13 @@ nav {
     background-color: $white;
     border-radius: 5px;
     color: $very_dark_grayish_blue;
-    font-weight: $fw_bold;
+    font-family: $ff_Ubuntu;
+    font-weight: $fw_medium;
     position: fixed;
     width: 32.7rem;
     top: 12rem;
     right: 2.4rem;
-    padding: 3.5rem 10rem;
+    padding: 3.5rem 2.5rem;
     z-index: 99;
     ul {
       text-align: center;
@@ -155,6 +157,7 @@ nav {
       }
     }
     &:nth-child(2) {
+      margin: auto;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -178,15 +181,28 @@ details > summary {
   list-style: none;
   cursor: pointer;
   &::after {
-    content: url(../images/icon-arrow-dark.svg);
+    //content: url(../images/icon-arrow-dark.svg);
+    content: "+ ";
     transition: 0.2s ease-in;
   }
 }
 
 // Rotate arrow image after the summary when details are open:
-details[open] summary::after {
-  content: url(../images/icon-arrow-light.svg);
+details[open] > summary::after {
+  //content: url(../images/icon-arrow-light.svg);
+  content: "- ";
   transition: 0.2s ease-in;
+  //transform: rotate(90deg);
+}
+
+details {
+  ul {
+    background-color: $light_grayish_blue;
+    border-radius: 5px;
+    a {
+      color: $very_dark_grayish_blue;
+    }
+  }
 }
 
 h1 {
