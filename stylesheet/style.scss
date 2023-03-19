@@ -117,6 +117,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
   }
 
   .closeIcon {
@@ -144,7 +145,7 @@ nav {
 
 .menuListItems {
   li {
-    margin-bottom: 3.5rem;
+    margin-bottom: 3.5rem; //except the last one
   }
 }
 
@@ -181,18 +182,15 @@ details > summary {
   list-style: none;
   cursor: pointer;
   &::after {
-    //content: url(../images/icon-arrow-dark.svg);
-    content: "+ ";
+    content: url(../images/icon-arrow-dark.svg);
     transition: 0.2s ease-in;
   }
 }
 
 // Rotate arrow image after the summary when details are open:
-details[open] > summary::after {
-  //content: url(../images/icon-arrow-light.svg);
-  content: "- ";
+details[open] summary::after {
+  content: url(../images/icon-arrow-dark-up.svg);
   transition: 0.2s ease-in;
-  //transform: rotate(90deg);
 }
 
 details {
