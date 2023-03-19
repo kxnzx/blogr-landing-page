@@ -83,24 +83,38 @@ nav .closeIcon {
   display: none; /* Toggle this on and off in JS */
 }
 nav .menuList {
+  display: none; /* Toggle this on and off in JS */
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
   color: hsl(207deg, 13%, 34%);
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
-  position: fixed;
+  position: absolute;
   width: 32.7rem;
   top: 12rem;
   right: 2.4rem;
-  padding: 3.5rem 2.5rem;
+  padding: 0 2.5rem;
   z-index: 99;
 }
 nav .menuList ul {
   text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.showMenu {
+  display: block; /* Toggle this on and off in JS */
 }
 
 .menuListItems li {
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+.menuListItems li:last-child {
+  margin-bottom: 0rem;
+}
+
+hr {
+  color: #efeff0;
 }
 
 .menuListItemsLinks li:first-child {
@@ -142,6 +156,7 @@ details[open] summary::after {
 }
 
 details ul {
+  margin-top: 2.5rem;
   background-color: #efeff0;
   border-radius: 5px;
 }

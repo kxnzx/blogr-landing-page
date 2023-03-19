@@ -124,29 +124,43 @@ nav {
     display: none; /* Toggle this on and off in JS */
   }
 
+  // MENU FOR MOBILE VIEWPORTS
   .menuList {
-    //display: none; /* Toggle this on and off in JS */
+    display: none; /* Toggle this on and off in JS */
     background-color: $white;
     border-radius: 5px;
     color: $very_dark_grayish_blue;
     font-family: $ff_Ubuntu;
     font-weight: $fw_medium;
-    position: fixed;
+    position: absolute;
     width: 32.7rem;
     top: 12rem;
     right: 2.4rem;
-    padding: 3.5rem 2.5rem;
+    padding: 0 2.5rem;
     z-index: 99;
     ul {
       text-align: center;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
     }
   }
 }
 
+.showMenu {
+  display: block; /* Toggle this on and off in JS */
+}
+
 .menuListItems {
   li {
-    margin-bottom: 3.5rem; //except the last one
+    margin-bottom: 2.5rem; //except the last one
+    &:last-child {
+      margin-bottom: 0rem;
+    }
   }
+}
+
+hr {
+  color: $light_grayish_blue;
 }
 
 .menuListItemsLinks {
@@ -195,6 +209,7 @@ details[open] summary::after {
 
 details {
   ul {
+    margin-top: 2.5rem;
     background-color: $light_grayish_blue;
     border-radius: 5px;
     a {
