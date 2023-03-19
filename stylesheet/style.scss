@@ -121,12 +121,12 @@ nav {
   }
 
   .closeIcon {
-    display: none; /* Toggle this on and off in JS */
+    display: none; // Toggle this on and off in JS
   }
 
   // MENU FOR MOBILE VIEWPORTS
   .menuList {
-    display: none; /* Toggle this on and off in JS */
+    display: none; // Toggle this on and off in JS
     background-color: $white;
     border-radius: 5px;
     color: $very_dark_grayish_blue;
@@ -146,8 +146,8 @@ nav {
   }
 }
 
-.showMenu {
-  display: block; /* Toggle this on and off in JS */
+.displayMenu {
+  display: block; // Toggle this on and off in JS
 }
 
 .menuListItems {

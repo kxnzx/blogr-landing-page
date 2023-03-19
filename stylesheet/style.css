@@ -80,10 +80,10 @@ nav .toggleButton {
   cursor: pointer;
 }
 nav .closeIcon {
-  display: none; /* Toggle this on and off in JS */
+  display: none;
 }
 nav .menuList {
-  display: none; /* Toggle this on and off in JS */
+  display: none;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
   color: hsl(207deg, 13%, 34%);
@@ -102,8 +102,8 @@ nav .menuList ul {
   padding-bottom: 2.5rem;
 }
 
-.showMenu {
-  display: block; /* Toggle this on and off in JS */
+.displayMenu {
+  display: block;
 }
 
 .menuListItems li {
