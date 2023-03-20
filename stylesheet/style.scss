@@ -69,6 +69,10 @@ ol {
 a {
   text-decoration: none;
 }
+
+p {
+  line-height: 1.6;
+}
 // STYLES
 body {
   font-family: $ff_Overpass;
@@ -258,10 +262,17 @@ h1 {
 }
 
 article {
+  text-align: center;
   @media screen and (min-width: $desktop) {
     //display: grid;
     //grid-template-rows: repeat(3, 1fr);
   }
+}
+
+article > h2 {
+  margin-top: 10rem;
+  color: $very_dark_blue;
+  font-size: 2.6rem;
 }
 
 .grid-item {
@@ -273,4 +284,56 @@ article {
       grid-area: 1 / 2 / span 1 / span 1;
     }
   }
+}
+
+.grid-item > .editor {
+  height: 33rem;
+  background-image: url(../images/illustration-editor-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5.5rem;
+}
+
+.grid-item_content > h3 {
+  color: $very_dark_blue;
+  font-size: 2.6rem;
+  margin-top: 5.5rem;
+  max-width: 21rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second > h3 {
+  width: 100%;
+}
+
+.grid-item_content > p {
+  margin-top: 2.5rem;
+  color: $very_dark_grayish_blue;
+  max-width: 29.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background_gradient {
+  background-color: $very_dark_gray_blue;
+  background-image: url(..//images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: 56rem;
+  background-position: 52% -325%;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  height: 62rem;
+}
+
+.background_gradient > .grid-item_content > h2 {
+  padding-top: 22.5rem;
+  color: $white;
+  font-size: 4.25rem;
+  font-weight: $fw_medium;
+}
+
+.background_gradient > .grid-item_content > p {
+  color: $grayish_blue;
 }
