@@ -120,12 +120,20 @@ nav .menuList {
     inset: 0;
     border: solid black 2px;
     width: 100%;
+    z-index: inherit;
+    color: hsl(0deg, 0%, 100%);
   }
 }
 nav .menuList ul {
   text-align: center;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 1024px) {
+  nav .menuList ul {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .displayMenu {
@@ -175,6 +183,11 @@ hr {
 }
 .menuListItemsLinks li:first-child a {
   color: hsl(207deg, 13%, 34%);
+}
+@media screen and (min-width: 1024px) {
+  .menuListItemsLinks li:first-child a {
+    color: hsl(0deg, 0%, 100%);
+  }
 }
 .menuListItemsLinks li:nth-child(2) {
   margin: auto;

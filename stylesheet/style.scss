@@ -157,11 +157,17 @@ nav {
       inset: 0;
       border: solid black 2px;
       width: 100%;
+      z-index: inherit;
+      color: $white;
     }
     ul {
       text-align: center;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
+      @media screen and (min-width: $desktop) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -208,6 +214,9 @@ hr {
       }
       a {
         color: $very_dark_grayish_blue;
+        @media screen and (min-width: $desktop) {
+          color: $white;
+        }
       }
     }
     &:nth-child(2) {
