@@ -113,6 +113,9 @@ nav {
   padding-bottom: 10rem;
   @media screen and (min-width: $desktop) {
     border: solid black 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+    //height: 24rem;
   }
   .logo {
     width: 8rem;

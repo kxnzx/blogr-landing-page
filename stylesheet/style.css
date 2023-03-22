@@ -75,6 +75,8 @@ nav {
 @media screen and (min-width: 1024px) {
   nav {
     border: solid black 2px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 nav .logo {
