@@ -149,10 +149,14 @@ nav {
     padding: 0 2.5rem;
     z-index: 99;
     @media screen and (min-width: $desktop) {
-      display: block;
-      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
       position: relative;
       inset: 0;
+      border: solid black 2px;
+      width: 100%;
     }
     ul {
       text-align: center;

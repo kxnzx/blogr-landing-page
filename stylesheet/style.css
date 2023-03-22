@@ -112,10 +112,14 @@ nav .menuList {
 }
 @media screen and (min-width: 1024px) {
   nav .menuList {
-    display: block;
-    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
     position: relative;
     inset: 0;
+    border: solid black 2px;
+    width: 100%;
   }
 }
 nav .menuList ul {
