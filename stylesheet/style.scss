@@ -100,8 +100,8 @@ header {
     // This item will start on row 1 and column 1,and span 2 rows and 1 column:
     //grid-area: 1 / 1 / span 3 / span 1;
     background-image: url(../images/bg-pattern-intro-desktop.svg),
-      linear-gradient(to bottom right, $very_light_red, $light_red);
-    background-position: 29% 49%;
+      linear-gradient(to right, $very_light_red, $light_red);
+    background-position: 29% 53%;
   }
 }
 

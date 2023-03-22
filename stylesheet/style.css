@@ -60,8 +60,8 @@ header {
 }
 @media screen and (min-width: 1024px) {
   header {
-    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to bottom right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
-    background-position: 29% 49%;
+    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+    background-position: 29% 53%;
   }
 }
 
