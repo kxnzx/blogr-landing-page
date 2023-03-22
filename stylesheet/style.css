@@ -72,6 +72,11 @@ nav {
   padding-top: 5.5rem;
   padding-bottom: 10rem;
 }
+@media screen and (min-width: 1024px) {
+  nav {
+    border: solid black 2px;
+  }
+}
 nav .logo {
   width: 8rem;
 }
@@ -82,6 +87,11 @@ nav .toggleButton {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  nav .toggleButton {
+    display: none;
+  }
 }
 nav .closeIcon {
   display: none;
@@ -100,6 +110,14 @@ nav .menuList {
   padding: 0 2.5rem;
   z-index: 99;
 }
+@media screen and (min-width: 1024px) {
+  nav .menuList {
+    display: block;
+    background-color: transparent;
+    position: relative;
+    inset: 0;
+  }
+}
 nav .menuList ul {
   text-align: center;
   padding-top: 2.5rem;
@@ -110,6 +128,12 @@ nav .menuList ul {
   display: block;
 }
 
+@media screen and (min-width: 1024px) {
+  .menuListItems {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menuListItems li {
   margin-bottom: 2.5rem;
 }
@@ -120,7 +144,18 @@ nav .menuList ul {
 hr {
   color: #efeff0;
 }
+@media screen and (min-width: 1024px) {
+  hr {
+    display: none;
+  }
+}
 
+@media screen and (min-width: 1024px) {
+  .menuListItemsLinks {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .menuListItemsLinks li:first-child {
   margin-bottom: 2.2rem;
 }
