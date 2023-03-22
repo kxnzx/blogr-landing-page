@@ -305,23 +305,33 @@ article > h2 {
 }
 
 .second > h3 {
-  width: 100%;
+  max-width: 30rem;
 }
 
 .grid-item_content > p {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   color: $very_dark_grayish_blue;
   max-width: 29.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+.border {
+  margin-top: 25rem;
+  position: relative;
+}
+
+.phones {
+  position: absolute;
+  top: -17.5rem;
+}
+
 .background_gradient {
   background-color: $very_dark_gray_blue;
   background-image: url(..//images/bg-pattern-circles.svg);
   background-repeat: no-repeat;
-  background-size: 56rem;
-  background-position: 52% -325%;
+  background-size: 59rem;
+  background-position: 53% -802%;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   height: 62rem;
@@ -336,4 +346,57 @@ article > h2 {
 
 .background_gradient > .grid-item_content > p {
   color: $grayish_blue;
+}
+
+.grid-item > .laptop {
+  height: 33rem;
+  background-image: url(../images/illustration-laptop-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5.5rem;
+}
+
+footer {
+  background-color: $very_dark_black_blue;
+  border-top-right-radius: 100px;
+  color: $white;
+  padding-top: 7.5rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+footer > a > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer > ul {
+  margin-top: 8rem;
+}
+
+footer > ul > li {
+  margin-top: 3.5rem;
+  font-weight: $fw_semiBold;
+  font-family: $ff_Ubuntu;
+}
+
+footer > ul > li > ul {
+  margin-top: 3rem;
+  li {
+    font-weight: $fw_regular;
+    &:not(:first-child) {
+      margin-top: 1.4rem;
+    }
+    a {
+      color: $grayish_blue;
+    }
+  }
+}
+
+footer > .attribution {
+  margin-top: 2.4rem;
+  a {
+    color: $light_red;
+  }
 }

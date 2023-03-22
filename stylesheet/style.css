@@ -245,23 +245,33 @@ article > h2 {
 }
 
 .second > h3 {
-  width: 100%;
+  max-width: 30rem;
 }
 
 .grid-item_content > p {
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   color: hsl(207deg, 13%, 34%);
   max-width: 29.5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+.border {
+  margin-top: 25rem;
+  position: relative;
+}
+
+.phones {
+  position: absolute;
+  top: -17.5rem;
+}
+
 .background_gradient {
   background-color: hsl(237deg, 17%, 21%);
   background-image: url(..//images/bg-pattern-circles.svg);
   background-repeat: no-repeat;
-  background-size: 56rem;
-  background-position: 52% -325%;
+  background-size: 59rem;
+  background-position: 53% -802%;
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   height: 62rem;
@@ -276,4 +286,57 @@ article > h2 {
 
 .background_gradient > .grid-item_content > p {
   color: hsl(240deg, 2%, 79%);
+}
+
+.grid-item > .laptop {
+  height: 33rem;
+  background-image: url(../images/illustration-laptop-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5.5rem;
+}
+
+footer {
+  background-color: hsl(240deg, 10%, 16%);
+  border-top-right-radius: 100px;
+  color: hsl(0deg, 0%, 100%);
+  padding-top: 7.5rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+footer > a > img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer > ul {
+  margin-top: 8rem;
+}
+
+footer > ul > li {
+  margin-top: 3.5rem;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+
+footer > ul > li > ul {
+  margin-top: 3rem;
+}
+footer > ul > li > ul li {
+  font-weight: 400;
+}
+footer > ul > li > ul li:not(:first-child) {
+  margin-top: 1.4rem;
+}
+footer > ul > li > ul li a {
+  color: hsl(240deg, 2%, 79%);
+}
+
+footer > .attribution {
+  margin-top: 2.4rem;
+}
+footer > .attribution a {
+  color: hsl(353deg, 100%, 62%);
 }/*# sourceMappingURL=style.css.map */
