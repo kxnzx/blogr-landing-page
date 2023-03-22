@@ -138,11 +138,13 @@ nav .menuList ul {
     justify-content: space-between;
   }
 }
-.menuListItems li {
-  margin-bottom: 2.5rem;
+.menuListItems li:not(:last-child) {
+  margin-top: 2.5rem;
 }
-.menuListItems li:last-child {
-  margin-bottom: 0rem;
+@media screen and (min-width: 1024px) {
+  .menuListItems li:not(:last-child) {
+    margin-top: 0;
+  }
 }
 
 hr {
@@ -162,6 +164,14 @@ hr {
 }
 .menuListItemsLinks li:first-child {
   margin-bottom: 2.2rem;
+}
+@media screen and (min-width: 1024px) {
+  .menuListItemsLinks li:first-child {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 .menuListItemsLinks li:first-child a {
   color: hsl(207deg, 13%, 34%);
