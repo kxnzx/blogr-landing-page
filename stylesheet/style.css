@@ -178,6 +178,7 @@ hr {
     position: absolute;
     right: 0;
     top: -1.5rem;
+    gap: 3rem;
   }
 }
 .menuListItemsLinks li:first-child {
