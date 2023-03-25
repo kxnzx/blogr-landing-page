@@ -127,6 +127,8 @@ nav .menuList {
     width: 85%;
     color: hsl(0deg, 0%, 100%);
     z-index: inherit;
+    padding: 0;
+    height: 16.5rem;
   }
 }
 nav .menuList ul {
