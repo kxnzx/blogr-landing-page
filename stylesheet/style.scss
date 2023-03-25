@@ -261,6 +261,9 @@ details > summary {
   &::after {
     content: url(../images/icon-arrow-dark.svg);
     transition: 0.2s ease-in;
+    @media screen and (min-width: $desktop) {
+      content: url(../images/icon-arrow-light.svg);
+    }
   }
 }
 
@@ -268,6 +271,9 @@ details > summary {
 details[open] summary::after {
   content: url(../images/icon-arrow-dark-up.svg);
   transition: 0.2s ease-in;
+  @media screen and (min-width: $desktop) {
+    content: url(../images/icon-arrow-light-up.svg);
+  }
 }
 
 details {
