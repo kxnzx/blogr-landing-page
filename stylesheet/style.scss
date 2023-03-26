@@ -281,14 +281,13 @@ details {
     margin-top: 2.5rem;
     background-color: $light_grayish_blue;
     border-radius: 5px;
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+    }
     a {
       color: $very_dark_grayish_blue;
     }
   }
-}
-
-details > ul {
-  position: absolute;
 }
 
 h1 {
