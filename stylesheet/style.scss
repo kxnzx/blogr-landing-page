@@ -102,6 +102,8 @@ header {
     background-image: url(../images/bg-pattern-intro-desktop.svg),
       linear-gradient(to right, $very_light_red, $light_red);
     background-position: 29% 53%;
+    padding-left: 17rem;
+    padding-right: 17rem;
   }
 }
 
@@ -112,17 +114,18 @@ nav {
   padding-top: 5.5rem;
   padding-bottom: 10rem;
   @media screen and (min-width: $desktop) {
-    //padding-top: 0;
+    //height: 20rem;
+    //align-items: unset;
     //padding-bottom: 0;
     //margin: 6rem 16.5rem 0 16.5rem;
     //align-items: flex-start;
     //position: relative;
+    //max-width: 111rem;
+    //margin: 0 auto;
   }
   .logo {
     width: 8rem;
-    //position: absolute;
-    //top: -0.55rem;
-    //left: 2.5rem;
+    display: block;
   }
 
   .toggleButton {
@@ -143,7 +146,7 @@ nav {
 
   // MENU FOR MOBILE VIEWPORTS
   .menuList {
-    display: block; // Toggle this on and off in JS
+    display: none; // Toggle this on and off in JS
     background-color: $white;
     border-radius: 5px;
     color: $very_dark_grayish_blue;
@@ -156,25 +159,22 @@ nav {
     padding: 0 2.5rem;
     z-index: 99;
     @media screen and (min-width: $desktop) {
-      //display: flex;
-      //justify-content: space-between;
-      //align-items: center;
-      //background: none;
-      //position: relative;
-      //inset: 0;
-      //width: 85%;
-      //color: $white;
-      //z-index: inherit;
-      //padding: 0;
-      //height: 16.5rem;
+      display: flex;
+      background: none;
+      position: relative;
+      inset: 0;
+      width: 100%;
+      color: $white;
+      //border: solid 1px black;
     }
     ul {
       text-align: center;
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
       @media screen and (min-width: $desktop) {
-        //padding-top: 0;
-        //padding-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: left;
       }
     }
   }
@@ -186,14 +186,14 @@ nav {
 
 .menuListItems {
   @media screen and (min-width: $desktop) {
-    //display: flex;
-    //justify-content: space-between;
+    display: flex;
+    gap: 3rem;
   }
   li {
     &:not(:first-child) {
       margin-top: 2.5rem;
       @media screen and (min-width: $desktop) {
-        //margin-top: 0;
+        margin-top: 0;
       }
     }
   }
@@ -209,6 +209,10 @@ hr {
 .menuListItemsLinks {
   text-align: center;
   list-style: none;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+    align-items: center;
+  }
   a {
     color: $very_dark_grayish_blue;
     @media screen and (min-width: $desktop) {
@@ -220,6 +224,11 @@ hr {
 .login {
   padding-top: 2.2rem;
   padding-bottom: 2.2rem;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    right: 16rem;
+    padding: 0;
+  }
 }
 
 .signUp {
@@ -233,6 +242,12 @@ hr {
   background-image: linear-gradient(to right, $very_light_red, $light_red);
   margin-bottom: 2.2rem;
   cursor: pointer;
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+  }
 }
 
 // Customize the default arrow with Webkit Pseudo-element:
@@ -270,6 +285,10 @@ details {
       color: $very_dark_grayish_blue;
     }
   }
+}
+
+details > ul {
+  position: absolute;
 }
 
 h1 {
