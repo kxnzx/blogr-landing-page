@@ -78,6 +78,11 @@ nav .logo {
   width: 8rem;
   display: block;
 }
+@media screen and (min-width: 1024px) {
+  nav .logo {
+    width: 100%;
+  }
+}
 nav .toggleButton {
   background: none;
   border: none;

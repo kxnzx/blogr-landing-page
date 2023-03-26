@@ -113,19 +113,12 @@ nav {
   align-items: center;
   padding-top: 5.5rem;
   padding-bottom: 10rem;
-  @media screen and (min-width: $desktop) {
-    //height: 20rem;
-    //align-items: unset;
-    //padding-bottom: 0;
-    //margin: 6rem 16.5rem 0 16.5rem;
-    //align-items: flex-start;
-    //position: relative;
-    //max-width: 111rem;
-    //margin: 0 auto;
-  }
   .logo {
     width: 8rem;
     display: block;
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+    }
   }
 
   .toggleButton {
