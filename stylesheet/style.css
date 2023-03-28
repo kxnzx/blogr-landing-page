@@ -121,6 +121,7 @@ nav .menuList {
     inset: 0;
     width: 100%;
     color: hsl(0deg, 0%, 100%);
+    align-items: center;
   }
 }
 nav .menuList ul {
@@ -170,7 +171,6 @@ hr {
 @media screen and (min-width: 1024px) {
   .menuListItemsLinks {
     text-align: left;
-    align-items: center;
   }
 }
 .menuListItemsLinks a {
@@ -211,7 +211,7 @@ hr {
     margin: 0;
     position: absolute;
     right: 0;
-    top: -1.5rem;
+    top: 1.5rem;
   }
 }
 
