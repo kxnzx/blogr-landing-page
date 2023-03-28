@@ -122,6 +122,8 @@ nav .menuList {
     width: 100%;
     color: hsl(0deg, 0%, 100%);
     align-items: center;
+    padding: 0;
+    margin-left: 3.3rem;
   }
 }
 nav .menuList ul {
@@ -274,6 +276,11 @@ h1 {
   font-size: 3.6rem;
   padding-bottom: 2rem;
 }
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 6.25rem;
+  }
+}
 
 .subtitle {
   text-align: center;
@@ -286,6 +293,12 @@ h1 {
   justify-content: space-around;
   padding-bottom: 15rem;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .navigation_links {
+    max-width: 29.5rem;
+    margin: auto;
+  }
 }
 .navigation_links li {
   display: flex;
