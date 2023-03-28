@@ -426,6 +426,14 @@ article > h2 {
   top: -17.5rem;
 }
 
+.art {
+  @media screen and (min-width: $desktop) {
+    // This item will start on row 2 and column 2,and span 1 rows and 1 column:
+    grid-area: 2 / 2 / span 9 / span 1;
+    margin: auto;
+  }
+}
+
 .background_gradient {
   background-color: $very_dark_gray_blue;
   background-image: url(..//images/bg-pattern-circles.svg);
@@ -435,6 +443,10 @@ article > h2 {
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   height: 62rem;
+  @media screen and (min-width: $desktop) {
+    background-position: 0% 150%;
+    height: 40rem;
+  }
 }
 
 .background_gradient > .grid-item_content > h2 {
@@ -442,6 +454,9 @@ article > h2 {
   color: $white;
   font-size: 4.25rem;
   font-weight: $fw_medium;
+  @media screen and (min-width: $desktop) {
+    padding-top: 0;
+  }
 }
 
 .background_gradient > .grid-item_content > p {

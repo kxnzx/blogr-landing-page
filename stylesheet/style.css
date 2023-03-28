@@ -411,6 +411,13 @@ article > h2 {
   top: -17.5rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .art {
+    grid-area: 2/2/span 9/span 1;
+    margin: auto;
+  }
+}
+
 .background_gradient {
   background-color: hsl(237deg, 17%, 21%);
   background-image: url(..//images/bg-pattern-circles.svg);
@@ -421,12 +428,23 @@ article > h2 {
   border-bottom-left-radius: 100px;
   height: 62rem;
 }
+@media screen and (min-width: 1024px) {
+  .background_gradient {
+    background-position: 0% 150%;
+    height: 40rem;
+  }
+}
 
 .background_gradient > .grid-item_content > h2 {
   padding-top: 22.5rem;
   color: hsl(0deg, 0%, 100%);
   font-size: 4.25rem;
   font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .background_gradient > .grid-item_content > h2 {
+    padding-top: 0;
+  }
 }
 
 .background_gradient > .grid-item_content > p {
