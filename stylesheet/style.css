@@ -130,8 +130,7 @@ nav .menuList ul {
 }
 @media screen and (min-width: 1024px) {
   nav .menuList ul {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 3rem 6.5rem 3rem 2rem;
     text-align: left;
   }
 }
@@ -254,8 +253,19 @@ details ul {
     position: absolute;
   }
 }
+@media screen and (min-width: 1024px) {
+  details ul li:not(:first-child) {
+    padding-top: 2rem;
+  }
+}
 details ul a {
   color: hsl(207deg, 13%, 34%);
+}
+@media screen and (min-width: 1024px) {
+  details ul a:hover {
+    color: hsl(240deg, 10%, 16%);
+    font-weight: 500;
+  }
 }
 
 h1 {

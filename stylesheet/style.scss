@@ -165,8 +165,7 @@ nav {
       padding-top: 2.5rem;
       padding-bottom: 2.5rem;
       @media screen and (min-width: $desktop) {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 3rem 6.5rem 3rem 2rem;
         text-align: left;
       }
     }
@@ -277,8 +276,21 @@ details {
     @media screen and (min-width: $desktop) {
       position: absolute;
     }
+    li {
+      @media screen and (min-width: $desktop) {
+        &:not(:first-child) {
+          padding-top: 2rem;
+        }
+      }
+    }
     a {
       color: $very_dark_grayish_blue;
+      @media screen and (min-width: $desktop) {
+        &:hover {
+          color: $very_dark_black_blue;
+          font-weight: $fw_medium;
+        }
+      }
     }
   }
 }
