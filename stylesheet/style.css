@@ -323,16 +323,24 @@ h1 {
 article {
   text-align: center;
 }
+
 article > h2 {
   margin-top: 10rem;
   color: hsl(208deg, 49%, 24%);
   font-size: 2.6rem;
+}
+@media screen and (min-width: 1024px) {
+  article > h2 {
+    font-size: 3.6rem;
+    margin-top: 16rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .grid-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    height: 60rem;
   }
   .grid-item .editor {
     grid-area: 1/2/span 1/span 1;
@@ -347,6 +355,18 @@ article > h2 {
   background-position: center;
   margin-top: 5.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .grid-item > .editor {
+    height: 60rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-item_content {
+    text-align: left;
+    margin: auto;
+  }
+}
 
 .grid-item_content > h3 {
   color: hsl(208deg, 49%, 24%);
@@ -355,6 +375,12 @@ article > h2 {
   max-width: 21rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+  .grid-item_content > h3 {
+    max-width: 56.5rem;
+    font-size: 2.6rem;
+  }
 }
 
 .second > h3 {
@@ -367,6 +393,12 @@ article > h2 {
   max-width: 29.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+  .grid-item_content > p {
+    max-width: 56.5rem;
+    font-size: 1.8rem;
+  }
 }
 
 .border {
