@@ -322,6 +322,13 @@ h1 {
 
 article {
   text-align: center;
+  border: solid 2px black;
+}
+@media screen and (min-width: 1024px) {
+  article {
+    display: grid;
+    grid-template-rows: 25rem 60rem 70rem 90rem;
+  }
 }
 
 article > h2 {
@@ -332,7 +339,8 @@ article > h2 {
 @media screen and (min-width: 1024px) {
   article > h2 {
     font-size: 3.6rem;
-    margin-top: 16rem;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -340,7 +348,7 @@ article > h2 {
   .grid-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 60rem;
+    border: solid red 1px;
   }
   .grid-item .editor {
     grid-area: 1/2/span 1/span 1;
@@ -358,6 +366,7 @@ article > h2 {
 @media screen and (min-width: 1024px) {
   .grid-item > .editor {
     height: 60rem;
+    margin-top: 0;
   }
 }
 
@@ -415,6 +424,12 @@ article > h2 {
 .border {
   margin-top: 25rem;
   position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .border {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .phones {
@@ -481,8 +496,9 @@ article > h2 {
 }
 @media screen and (min-width: 1024px) {
   .grid-item > .laptop {
-    margin-top: 0rem;
-    height: 130%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 77rem;
   }
 }
 
@@ -493,6 +509,11 @@ footer {
   padding-top: 7.5rem;
   margin-top: 10rem;
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: 0;
+  }
 }
 
 footer > a > img {
