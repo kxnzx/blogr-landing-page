@@ -400,8 +400,17 @@ article > h2 {
   }
 }
 
+.second {
+  @media screen and (min-width: $desktop) {
+    padding-right: 8rem;
+  }
+}
+
 .second > h3 {
   max-width: 30rem;
+  @media screen and (min-width: $desktop) {
+    max-width: 56.5rem;
+  }
 }
 
 .grid-item_content > p {
@@ -477,6 +486,10 @@ article > h2 {
   background-size: cover;
   background-position: center;
   margin-top: 5.5rem;
+  @media screen and (min-width: $desktop) {
+    margin-top: 0rem;
+    height: 130%;
+  }
 }
 
 footer {
