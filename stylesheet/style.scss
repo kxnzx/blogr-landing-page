@@ -444,7 +444,8 @@ article > h2 {
   border-bottom-left-radius: 100px;
   height: 62rem;
   @media screen and (min-width: $desktop) {
-    background-position: 0% 150%;
+    background-position: -15% 83%;
+    background-size: 75rem;
     height: 40rem;
   }
 }
