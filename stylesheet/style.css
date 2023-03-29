@@ -410,6 +410,13 @@ article > h2 {
   position: absolute;
   top: -17.5rem;
 }
+@media screen and (min-width: 1024px) {
+  .phones {
+    width: 54rem;
+    top: -6.5rem;
+    left: 16rem;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .art {
