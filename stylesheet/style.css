@@ -422,6 +422,7 @@ article > h2 {
   .art {
     grid-area: 2/2/span 9/span 1;
     margin: auto;
+    padding-right: 8rem;
   }
 }
 
@@ -437,8 +438,8 @@ article > h2 {
 }
 @media screen and (min-width: 1024px) {
   .background_gradient {
-    background-position: -15% 83%;
-    background-size: 75rem;
+    background-position: -88% 82%;
+    background-size: 112rem;
     height: 40rem;
   }
 }

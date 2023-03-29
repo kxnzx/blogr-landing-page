@@ -436,6 +436,7 @@ article > h2 {
     // This item will start on row 2 and column 2,and span 1 rows and 1 column:
     grid-area: 2 / 2 / span 9 / span 1;
     margin: auto;
+    padding-right: 8rem;
   }
 }
 
@@ -449,8 +450,8 @@ article > h2 {
   border-bottom-left-radius: 100px;
   height: 62rem;
   @media screen and (min-width: $desktop) {
-    background-position: -15% 83%;
-    background-size: 75rem;
+    background-position: -88% 82%;
+    background-size: 112rem;
     height: 40rem;
   }
 }
