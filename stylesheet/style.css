@@ -327,7 +327,8 @@ article {
 @media screen and (min-width: 1024px) {
   article {
     display: grid;
-    grid-template-rows: 25rem 60rem 70rem 90rem;
+    grid-template-rows: 30rem 60rem 70rem 90rem;
+    border: solid red 5px;
   }
 }
 
@@ -339,8 +340,13 @@ article > h2 {
 @media screen and (min-width: 1024px) {
   article > h2 {
     font-size: 3.6rem;
-    margin-top: auto;
-    margin-bottom: auto;
+    align-self: center;
+    margin-top: 0;
+    border: solid green 5px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
@@ -355,6 +361,16 @@ article > h2 {
   }
 }
 
+.overlap {
+  border: solid blueviolet 5px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  align-self: center;
+  height: 90rem;
+}
+
 .grid-item > .editor {
   height: 33rem;
   background-image: url(../images/illustration-editor-mobile.svg);
@@ -367,6 +383,7 @@ article > h2 {
   .grid-item > .editor {
     height: 60rem;
     margin-top: 0;
+    background-position: 20% 10% 30%;
   }
 }
 
