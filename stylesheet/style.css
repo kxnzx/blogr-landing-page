@@ -327,7 +327,7 @@ article {
 @media screen and (min-width: 1024px) {
   article {
     display: grid;
-    grid-template-rows: 30rem 60rem 70rem 90rem;
+    grid-template-rows: 30rem 60rem 40rem 90rem;
     border: solid red 5px;
   }
 }
@@ -381,9 +381,11 @@ article > h2 {
 }
 @media screen and (min-width: 1024px) {
   .grid-item > .editor {
-    height: 60rem;
+    background-image: url(../images/illustration-editor-desktop.svg);
+    height: 81.5rem;
     margin-top: 0;
     align-self: center;
+    background-position: 10rem;
     border: solid black 2px;
   }
 }
