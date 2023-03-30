@@ -383,14 +383,16 @@ article > h2 {
   .grid-item > .editor {
     height: 60rem;
     margin-top: 0;
-    background-position: 20% 10% 30%;
+    align-self: center;
+    border: solid black 2px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .grid-item_content {
     text-align: left;
-    margin: auto;
+    align-self: center;
+    border: solid black 2px;
   }
 }
 

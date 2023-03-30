@@ -402,14 +402,16 @@ article > h2 {
   @media screen and (min-width: $desktop) {
     height: 60rem;
     margin-top: 0;
-    background-position: 20% 10% 30%;
+    align-self: center;
+    border: solid black 2px;
   }
 }
 
 .grid-item_content {
   @media screen and (min-width: $desktop) {
     text-align: left;
-    margin: auto;
+    align-self: center;
+    border: solid black 2px;
   }
 }
 
