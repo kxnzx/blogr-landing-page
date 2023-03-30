@@ -322,13 +322,11 @@ h1 {
 
 article {
   text-align: center;
-  border: solid 2px black;
 }
 @media screen and (min-width: 1024px) {
   article {
     display: grid;
-    grid-template-rows: 30rem 60rem 40rem 90rem;
-    border: solid red 5px;
+    grid-template-rows: 30rem 60rem 40rem 100rem;
   }
 }
 
@@ -342,7 +340,6 @@ article > h2 {
     font-size: 3.6rem;
     align-self: center;
     margin-top: 0;
-    border: solid green 5px;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
@@ -354,7 +351,6 @@ article > h2 {
   .grid-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: solid red 1px;
   }
   .grid-item .editor {
     grid-area: 1/2/span 1/span 1;
@@ -362,7 +358,6 @@ article > h2 {
 }
 
 .overlap {
-  border: solid blueviolet 5px;
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -386,7 +381,6 @@ article > h2 {
     margin-top: 0;
     align-self: center;
     background-position: 10rem;
-    border: solid black 2px;
   }
 }
 
@@ -394,7 +388,6 @@ article > h2 {
   .grid-item_content {
     text-align: left;
     align-self: center;
-    border: solid black 2px;
   }
 }
 
@@ -517,9 +510,11 @@ article > h2 {
 }
 @media screen and (min-width: 1024px) {
   .grid-item > .laptop {
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 77rem;
+    background-image: url(../images/illustration-laptop-desktop.svg);
+    margin-top: 0;
+    align-self: center;
+    height: 78rem;
+    background-position: -27.3rem;
   }
 }
 
