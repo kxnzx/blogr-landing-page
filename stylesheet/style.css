@@ -270,6 +270,15 @@ details ul a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  details > summary:visited {
+    text-underline-position: under;
+  }
+  details > summary:hover {
+    font-weight: 700;
+  }
+}
+
 h1 {
   text-align: center;
   font-weight: 500;
