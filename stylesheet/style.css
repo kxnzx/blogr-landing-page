@@ -208,12 +208,41 @@ hr {
   margin-bottom: 2.2rem;
   cursor: pointer;
 }
+.signUp:hover {
+  background-image: none;
+  background-color: #fe7a85;
+}
 @media screen and (min-width: 1024px) {
   .signUp {
     margin: 0;
     position: absolute;
     right: 0;
     top: 1.5rem;
+  }
+}
+
+details ul {
+  margin-top: 2.5rem;
+  background-color: #efeff0;
+  border-radius: 5px;
+}
+@media screen and (min-width: 1024px) {
+  details ul {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1024px) {
+  details ul li:not(:first-child) {
+    padding-top: 2rem;
+  }
+}
+details ul a {
+  color: hsl(207deg, 13%, 34%);
+}
+@media screen and (min-width: 1024px) {
+  details ul a:hover {
+    color: hsl(240deg, 10%, 16%);
+    font-weight: 500;
   }
 }
 
@@ -245,28 +274,10 @@ details[open] summary::after {
   }
 }
 
-details ul {
-  margin-top: 2.5rem;
-  background-color: #efeff0;
-  border-radius: 5px;
-}
 @media screen and (min-width: 1024px) {
-  details ul {
-    position: absolute;
-  }
-}
-@media screen and (min-width: 1024px) {
-  details ul li:not(:first-child) {
-    padding-top: 2rem;
-  }
-}
-details ul a {
-  color: hsl(207deg, 13%, 34%);
-}
-@media screen and (min-width: 1024px) {
-  details ul a:hover {
-    color: hsl(240deg, 10%, 16%);
-    font-weight: 500;
+  details > summary > span:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
   }
 }
 
@@ -300,7 +311,7 @@ h1 {
     margin: auto;
   }
 }
-.navigation_links li {
+.navigation_links li > a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,16 +319,26 @@ h1 {
   height: 4.5rem;
   border-radius: 25px;
   border: solid white 1px;
-}
-.navigation_links li a {
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
 }
 .navigation_links .start {
   background-color: white;
-}
-.navigation_links .start a {
   color: hsl(353deg, 100%, 62%);
+}
+@media screen and (min-width: 1024px) {
+  .navigation_links .start:hover {
+    background-color: #fe7a85;
+    color: hsl(0deg, 0%, 100%);
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .learn:hover {
+    background-color: hsl(0deg, 0%, 100%);
+    color: hsl(353deg, 100%, 62%);
+  }
 }
 
 article {

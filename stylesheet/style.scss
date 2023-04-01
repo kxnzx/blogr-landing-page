@@ -235,37 +235,15 @@ hr {
   background-image: linear-gradient(to right, $very_light_red, $light_red);
   margin-bottom: 2.2rem;
   cursor: pointer;
+  &:hover {
+    background-image: none;
+    background-color: #fe7a85;
+  }
   @media screen and (min-width: $desktop) {
     margin: 0;
     position: absolute;
     right: 0;
     top: 1.5rem;
-  }
-}
-
-// Customize the default arrow with Webkit Pseudo-element:
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
-details > summary {
-  list-style: none;
-  cursor: pointer;
-  &::after {
-    content: url(../images/icon-arrow-dark.svg);
-    transition: 0.2s ease-in;
-    @media screen and (min-width: $desktop) {
-      content: url(../images/icon-arrow-light.svg);
-    }
-  }
-}
-
-// Rotate arrow image after the summary when details are open:
-details[open] summary::after {
-  content: url(../images/icon-arrow-dark-up.svg);
-  transition: 0.2s ease-in;
-  @media screen and (min-width: $desktop) {
-    content: url(../images/icon-arrow-light-up.svg);
   }
 }
 
@@ -296,6 +274,41 @@ details {
   }
 }
 
+// Customize the default arrow with Webkit Pseudo-element:
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+  &::after {
+    content: url(../images/icon-arrow-dark.svg);
+    transition: 0.2s ease-in;
+    @media screen and (min-width: $desktop) {
+      content: url(../images/icon-arrow-light.svg);
+    }
+  }
+}
+
+// Rotate arrow image after the summary when details are open:
+details[open] summary::after {
+  content: url(../images/icon-arrow-dark-up.svg);
+  transition: 0.2s ease-in;
+  @media screen and (min-width: $desktop) {
+    content: url(../images/icon-arrow-light-up.svg);
+  }
+}
+
+details > summary > span {
+  @media screen and (min-width: $desktop) {
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 0.2rem;
+    }
+  }
+}
+
 h1 {
   text-align: center;
   font-weight: $fw_medium;
@@ -321,7 +334,7 @@ h1 {
     max-width: 29.5rem;
     margin: auto;
   }
-  li {
+  li > a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,14 +342,26 @@ h1 {
     height: 4.5rem;
     border-radius: 25px;
     border: solid white 1px;
-    a {
-      color: $white;
-      font-weight: $fw_bold;
-    }
+    color: $white;
+    font-weight: $fw_bold;
   }
   .start {
     background-color: white;
-    a {
+    color: $light_red;
+    @media screen and (min-width: $desktop) {
+      &:hover {
+        background-color: #fe7a85;
+        color: $white;
+        border: none;
+      }
+    }
+  }
+}
+
+.learn {
+  @media screen and (min-width: $desktop) {
+    &:hover {
+      background-color: $white;
       color: $light_red;
     }
   }
