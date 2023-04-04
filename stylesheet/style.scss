@@ -551,8 +551,18 @@ article > h2 {
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: $desktop) {
+    height: 50rem;
+    max-width: 50rem;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-position: -18.3rem;
+  }
+  @media screen and (min-width: 1350px) {
     background-image: url(../images/illustration-laptop-desktop.svg);
     margin-top: 0;
+    margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
     align-self: center;

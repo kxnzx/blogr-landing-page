@@ -549,8 +549,20 @@ article > h2 {
 }
 @media screen and (min-width: 1024px) {
   .grid-item > .laptop {
+    height: 50rem;
+    max-width: 50rem;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-position: -18.3rem;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .grid-item > .laptop {
     background-image: url(../images/illustration-laptop-desktop.svg);
     margin-top: 0;
+    margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
     align-self: center;
