@@ -364,6 +364,9 @@ article > h2 {
   }
 }
 
+.grid-item {
+  border: solid green 2px;
+}
 @media screen and (min-width: 1024px) {
   .grid-item {
     display: grid;
@@ -374,17 +377,22 @@ article > h2 {
   }
 }
 
-.overlap {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  align-self: center;
-  height: 90rem;
+@media screen and (min-width: 1024px) {
+  .overlap {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    height: 90rem;
+  }
 }
 
 .grid-item > .editor {
   height: 33rem;
+  max-width: 40rem;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url(../images/illustration-editor-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
