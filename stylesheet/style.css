@@ -453,6 +453,11 @@ article > h2 {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 640px) {
+  .grid-item_content > p {
+    max-width: 53.5rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .grid-item_content > p {
     max-width: 56.5rem;

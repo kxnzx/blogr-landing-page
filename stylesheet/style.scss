@@ -469,6 +469,9 @@ article > h2 {
   max-width: 29.5rem;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: $mobile) {
+    max-width: 53.5rem;
+  }
   @media screen and (min-width: $desktop) {
     max-width: 56.5rem;
     font-size: 1.8rem;
