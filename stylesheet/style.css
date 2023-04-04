@@ -326,19 +326,15 @@ h1 {
   background-color: white;
   color: hsl(353deg, 100%, 62%);
 }
-@media screen and (min-width: 1024px) {
-  .navigation_links .start:hover {
-    background-color: #fe7a85;
-    color: hsl(0deg, 0%, 100%);
-    border: none;
-  }
+.navigation_links .start:hover {
+  background-color: #fe7a85;
+  color: hsl(0deg, 0%, 100%);
+  border: none;
 }
 
-@media screen and (min-width: 1024px) {
-  .learn:hover {
-    background-color: hsl(0deg, 0%, 100%);
-    color: hsl(353deg, 100%, 62%);
-  }
+.learn:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(353deg, 100%, 62%);
 }
 
 article {

@@ -348,22 +348,18 @@ h1 {
   .start {
     background-color: white;
     color: $light_red;
-    @media screen and (min-width: $desktop) {
-      &:hover {
-        background-color: #fe7a85;
-        color: $white;
-        border: none;
-      }
+    &:hover {
+      background-color: #fe7a85;
+      color: $white;
+      border: none;
     }
   }
 }
 
 .learn {
-  @media screen and (min-width: $desktop) {
-    &:hover {
-      background-color: $white;
-      color: $light_red;
-    }
+  &:hover {
+    background-color: $white;
+    color: $light_red;
   }
 }
 
