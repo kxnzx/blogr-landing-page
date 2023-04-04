@@ -538,19 +538,25 @@ article > h2 {
 
 .grid-item > .laptop {
   height: 33rem;
+  max-width: 38rem;
   background-image: url(../images/illustration-laptop-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 5.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 1024px) {
   .grid-item > .laptop {
     background-image: url(../images/illustration-laptop-desktop.svg);
     margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
     align-self: center;
     height: 78rem;
     background-position: -27.3rem;
+    max-width: 65rem;
   }
 }
 
