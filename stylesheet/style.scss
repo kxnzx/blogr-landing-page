@@ -387,7 +387,6 @@ article > h2 {
 }
 
 .grid-item {
-  border: solid green 2px;
   @media screen and (min-width: $desktop) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -425,6 +424,9 @@ article > h2 {
     margin-top: 0;
     align-self: center;
     background-position: 10rem;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
   }
 }
 
@@ -485,10 +487,12 @@ article > h2 {
 .phones {
   position: absolute;
   top: -17.5rem;
+  max-width: 37rem;
   @media screen and (min-width: $desktop) {
-    width: 54rem;
+    //max-width: 54rem;
+    max-width: 45rem;
     top: -6.5rem;
-    left: 16rem;
+    //left: 16rem;
   }
 }
 
