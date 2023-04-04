@@ -580,6 +580,7 @@ footer > ul > li {
   margin-top: 3.5rem;
   font-weight: 600;
   font-family: "Ubuntu", sans-serif;
+  cursor: pointer;
 }
 @media screen and (min-width: 1024px) {
   footer > ul > li {

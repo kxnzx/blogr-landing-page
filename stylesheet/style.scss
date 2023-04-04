@@ -580,6 +580,7 @@ footer > ul > li {
   margin-top: 3.5rem;
   font-weight: $fw_semiBold;
   font-family: $ff_Ubuntu;
+  cursor: pointer;
   @media screen and (min-width: $desktop) {
     margin-top: 0;
   }
