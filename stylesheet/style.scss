@@ -626,6 +626,12 @@ footer > ul > li > ul {
     }
     a {
       color: $grayish_blue;
+      @media screen and (min-width: $desktop) {
+        &:hover {
+          text-decoration: underline;
+          text-decoration-thickness: 0.2rem;
+        }
+      }
     }
   }
 }

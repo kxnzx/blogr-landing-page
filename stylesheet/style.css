@@ -637,6 +637,12 @@ footer > ul > li > ul li:not(:first-child) {
 footer > ul > li > ul li a {
   color: hsl(240deg, 2%, 79%);
 }
+@media screen and (min-width: 1024px) {
+  footer > ul > li > ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+  }
+}
 
 footer > .attribution {
   margin-top: 2.4rem;
