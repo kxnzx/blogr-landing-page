@@ -101,7 +101,6 @@ nav .closeIcon {
 }
 nav .menuList {
   display: none;
-  display: block;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
   color: hsl(207deg, 13%, 34%);
