@@ -101,6 +101,7 @@ nav .closeIcon {
 }
 nav .menuList {
   display: none;
+  display: block;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 5px;
   color: hsl(207deg, 13%, 34%);
@@ -158,6 +159,7 @@ nav .menuList ul {
 }
 
 hr {
+  margin-top: 2.5rem;
   color: #efeff0;
 }
 @media screen and (min-width: 1024px) {
@@ -166,30 +168,29 @@ hr {
   }
 }
 
-.menuListItemsLinks {
+.menuListItemsLinks > a {
   text-align: center;
   list-style: none;
-}
-@media screen and (min-width: 1024px) {
-  .menuListItemsLinks {
-    text-align: left;
-  }
-}
-.menuListItemsLinks a {
   color: hsl(207deg, 13%, 34%);
 }
 @media screen and (min-width: 1024px) {
-  .menuListItemsLinks a {
+  .menuListItemsLinks > a {
+    text-align: left;
     color: hsl(0deg, 0%, 100%);
   }
 }
 
-.login {
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+.menuListItemsLinks > .signUp {
+  color: hsl(0deg, 0%, 100%);
 }
 @media screen and (min-width: 1024px) {
-  .login {
+  .menuListItemsLinks > .signUp {
+    color: hsl(353deg, 100%, 62%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .log {
     position: absolute;
     right: 16rem;
     padding: 0;
@@ -205,7 +206,6 @@ hr {
   height: 4.5rem;
   border-radius: 25px;
   background-image: linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
-  margin-bottom: 2.2rem;
   cursor: pointer;
 }
 .signUp:hover {
@@ -214,10 +214,16 @@ hr {
 }
 @media screen and (min-width: 1024px) {
   .signUp {
+    background-image: none;
+    background-color: hsl(0deg, 0%, 100%);
     margin: 0;
     position: absolute;
     right: 0;
     top: 1.5rem;
+  }
+  .signUp:hover {
+    background-color: #fe7a85;
+    color: hsl(0deg, 0%, 100%);
   }
 }
 

@@ -140,6 +140,7 @@ nav {
   // MENU FOR MOBILE VIEWPORTS
   .menuList {
     display: none; // Toggle this on and off in JS
+    display: block;
     background-color: $white;
     border-radius: 5px;
     color: $very_dark_grayish_blue;
@@ -194,29 +195,31 @@ nav {
 }
 
 hr {
+  margin-top: 2.5rem;
   color: $light_grayish_blue;
   @media screen and (min-width: $desktop) {
     display: none;
   }
 }
 
-.menuListItemsLinks {
+.menuListItemsLinks > a {
   text-align: center;
   list-style: none;
+  color: $very_dark_grayish_blue;
   @media screen and (min-width: $desktop) {
     text-align: left;
-  }
-  a {
-    color: $very_dark_grayish_blue;
-    @media screen and (min-width: $desktop) {
-      color: $white;
-    }
+    color: $white;
   }
 }
 
-.login {
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+.menuListItemsLinks > .signUp {
+  color: $white;
+  @media screen and (min-width: $desktop) {
+    color: $light_red;
+  }
+}
+
+.log {
   @media screen and (min-width: $desktop) {
     position: absolute;
     right: 16rem;
@@ -233,17 +236,22 @@ hr {
   height: 4.5rem;
   border-radius: 25px;
   background-image: linear-gradient(to right, $very_light_red, $light_red);
-  margin-bottom: 2.2rem;
   cursor: pointer;
   &:hover {
     background-image: none;
     background-color: #fe7a85;
   }
   @media screen and (min-width: $desktop) {
+    background-image: none;
+    background-color: $white;
     margin: 0;
     position: absolute;
     right: 0;
     top: 1.5rem;
+    &:hover {
+      background-color: #fe7a85;
+      color: $white;
+    }
   }
 }
 
