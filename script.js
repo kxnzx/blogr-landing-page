@@ -13,6 +13,7 @@ function toggleMenu() {
     menu.classList.remove("displayMenu");
     closeIcon.style.display = "none";
     openIcon.style.display = "block";
+    menu.style.display = "none";
   }
   // If it's false that the menu class contains the showMenu class, do this:
   else {
@@ -20,6 +21,7 @@ function toggleMenu() {
     menu.classList.add("displayMenu");
     closeIcon.style.display = "block";
     openIcon.style.display = "none";
+    menu.style.display = "block";
   }
 }
 

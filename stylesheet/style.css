@@ -99,6 +99,9 @@ nav .toggleButton {
 nav .closeIcon {
   display: none;
 }
+nav .displayMenu {
+  display: block;
+}
 nav .menuList {
   display: none;
   background-color: hsl(0deg, 0%, 100%);
@@ -136,10 +139,6 @@ nav .menuList ul {
     padding: 3rem 6.5rem 3rem 2rem;
     text-align: left;
   }
-}
-
-.displayMenu {
-  display: block;
 }
 
 @media screen and (min-width: 1024px) {
