@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- View my Solution on [Frontend Mentor]()
-- View the [Live Site]()
+- View my Solution on [Frontend Mentor](https://github.com/kxnzx/blogr-landing-page)
+- View the [Live Site](https://kxnzx.github.io/blogr-landing-page/)
 
 ## My process
 
@@ -60,24 +60,19 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I have learned how to overlap elements with CSS Grid:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.overlap {
+  @media screen and (min-width: $desktop) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-self: center;
+    height: 90rem;
+  }
 }
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
 ```
 
 ## Author
